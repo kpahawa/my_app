@@ -92,7 +92,6 @@
 
 #jumbotron {
     min-height: 37em;
-    /*background-image: url('https://wallpaperscraft.com/image/san_francisco_bridge_sea_ocean_sky_28635_3840x2400.jpg');*/
     background-image: url('/assets/cinema.jpg');
     background-attachment: fixed;
 }

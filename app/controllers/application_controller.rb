@@ -3,8 +3,9 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  # This code here makes sure there is one active admin user when the database is created
+  # AdminUser.create!(:email => 'admin@example.com', :password=> 'password', :password_confirmation => 'password')
   private
-  
   #-> Prelang (user_login:devise)
   def require_user_signed_in
     unless user_signed_in?

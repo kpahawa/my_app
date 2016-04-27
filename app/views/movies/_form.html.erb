@@ -10,7 +10,22 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :director %><br>
+    <%= f.text_field :director %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :img %><br>
+    <%= f.text_field :img %>
+  </div>
   <div class="field">
     <%= f.label :rating %><br>
     <%= f.text_field :rating %>
@@ -23,6 +38,7 @@
     <%= f.label :dvd_release %><br>
     <%= f.datetime_select :dvd_release %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

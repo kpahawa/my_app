@@ -1,5 +1,5 @@
 ActiveAdmin.register Movie do
-  permit_params :rating, :release, :dvd_release
+  permit_params :rating, :release, :dvd_release, :title, :director, :url, :img
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

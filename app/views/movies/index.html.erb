@@ -3,6 +3,10 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
+      <th>Director</th>
+      <th>ImgURL</th>
+      <th>URL to movie</th>
       <th>Rating</th>
       <th>Release</th>
       <th>Dvd release</th>
@@ -13,6 +17,10 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.director %></td>
+        <td><%= movie.img %></td>
+        <td><%= movie.url %></td>
         <td><%= movie.rating %></td>
         <td><%= movie.release %></td>
         <td><%= movie.dvd_release %></td>
