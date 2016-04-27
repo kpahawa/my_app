@@ -32,6 +32,10 @@
   <div class="ui large top fixed hidden transition menu">
     <div class="ui container">
       <a class="<%= 'active ' if  current_page?(root_path) %>item" href="/">Home</a>
+      <div class="ui right item">
+        <a class="<%= 'active ' if  current_page?(new_user_session_path) %>item" href="<%=new_user_session_url %>">Log in</a>
+        <a class="<%= 'active ' if  current_page?(new_user_registration_path) %>item" href="<%=new_user_registration_url %>">Sign up</a>
+      </div>
       <!--you need to create paths similar to the one above. -->
     </div>
   </div>
@@ -45,16 +49,26 @@
             </a>
             <!--Same thing here.  Above is a hidden menu...this is nav bar menu-->
             <a class="<%= 'active ' if current_page?(root_path) %>item" href="/">Home</a>
-            <!--<a class="item">Forums</a>-->
-            <!--<div class="right item">-->
-            <!--<a class="ui inverted button">Log in</a>-->
-            <!--<a class="ui inverted button">Sign Up</a>-->
-            <!--</div>-->
+
+            <div class="right item">
+              <a class="item" href="<%=new_user_session_url %>">
+                <div class="<%= 'inverted ' if not current_page?(new_user_session_path) %>ui  button">
+                  Log in
+                </div>
+              </a>
+              <a class="item" href="<%=new_user_registration_url %>">
+                <div class="<%= 'inverted ' if not current_page?(new_user_registration_path) %>ui button">
+                  Sign up
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <%= yield %>
+  <div class="pusher">
+    <%= yield %>
+  </div>
   <div class="pusher" id="indexFooter">
     <div class="ui inverted vertical footer segment">
       <div class="ui container">
