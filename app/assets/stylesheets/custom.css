@@ -85,11 +85,15 @@
 
 #navBar {
     min-height:0 !important;
+    padding:0 !important;
+    padding-top:1em;
+
 }
 
 #jumbotron {
     min-height: 37em;
-    background-image: url('https://wallpaperscraft.com/image/san_francisco_bridge_sea_ocean_sky_28635_3840x2400.jpg');
+    /*background-image: url('https://wallpaperscraft.com/image/san_francisco_bridge_sea_ocean_sky_28635_3840x2400.jpg');*/
+    background-image: url('/assets/cinema.jpg');
     background-attachment: fixed;
 }
 
@@ -98,8 +102,13 @@
     font-size: large;
 }
 
+.fullStretch {
+    width:100%;
+    font-size: large;
+}
+
 #bContent {
-    padding-top:4em;
+    padding-top:5em;
     padding-bottom:2em;
 }
 
@@ -123,10 +132,10 @@
 .ProductBox--core h3 {
     color: #03a93a;
 }
-.ProductBox--persistence h3 {
+.ProductBox--latest h3 {
     color: #2185d0;
 }
-.ProductBox--batch h3 {
+.ProductBox--browse h3 {
     color: #6435c9;
 }
 .ProductBox--codegen h3 {

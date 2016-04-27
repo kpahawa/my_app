@@ -1,3 +1,100 @@
-<div class="pusher">
-  <h1>Hello world</h1>
+<div class="ui vertical masthead center aligned segment" id="jumbotron">
+  <div class="ui text container">
+    <h1 class="ui header" style="color: white;">Movie rating app</h1>
+    <a href="#bContent"><button class="ui positive button" id="fullStretch">Learn more</button></a>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment" id="bContent">
+  <h2 class="ui header" style="font-size: 2.5em;">What is this movie rating app?</h2>
+  <p id="headerParagraph">This app does some stuff with some things! Checkout some of the links below</p>
+
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="seven wide column">
+        <div class="ProductBox ProductBox--core">
+          <h3>Rate movies</h3>
+          <h4>You can rate moveis and stuff</h4>
+          <div class="container">
+            <a href="/" class="ui green button">Learn more</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="seven wide right floated column">
+        <div class="ProductBox ProductBox--latest">
+          <h3>Movie Releases</h3>
+          <h4>Check out the latest movie releases and stuff</h4>
+
+          <div class="container">
+            <a href="/" class="ui blue button">Latest releases</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--This is very similar to the row above-->
+
+    <!--row 2-->
+    <div class="row">
+      <div class="sixteen wide column">
+        <div class="ProductBox ProductBox--browse">
+          <h3>Browse our movies</h3>
+          <h4>Check out our complete collection and see the latest titles we have in store</h4>
+          <div class="container">
+            <a href="/" class="ui violet button">Browse movies</a>
+          </div>
+
+        </div>
+      </div>
+      <!--<div class="seven wide right floated column">-->
+        <!--<div class="ProductBox ProductBox&#45;&#45;codegen">-->
+          <!--<h3>Fast4J Code Generator</h3>-->
+          <!--<h4>Accelerates projects by providing Eclipse-based code generation capabilities</h4>-->
+
+          <!--<div class="container">-->
+            <!--<a href="/codegen" class="ui orange button">Learn more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe padded segment">
+  <div class="ui text container">
+    <div class="ui top attached label"><h3 id="centerText">Want To get in on this?</h3></div>
+    <p id="moreDetails">We are always looking for more admins for our page. Simply sign up here! </p>
+    <div class="centerTextBox">
+      <a href="<%=new_user_registration_url %>"><div class="ui green button fullStretch">Sign up</div> </a>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical stripe padded segment">
+  <div class="ui header" id="centerText">Are you an admin user or want to become one? </div>
+  <div class="ui equal width stackable internally celled grid">
+    <div class="center aligned row">
+      <div class="column">
+        <a href="/admin/login">
+          <div class="ui animated fade positive button" id="contactButtons">
+            <div class="visible content">For Existing Admin Users</div>
+            <div class="hidden content">
+              Admin login
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="column" id="colDivider">
+        <a href="/admin/admin_users/new">
+          <div class="ui animated fade positive button" id="contactButtons">
+            <div class="visible content">Become An Admin!</div>
+            <div class="hidden content">
+              Admin sign up
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
