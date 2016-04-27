@@ -1,0 +1,294 @@
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    /*min-height: 700px;*/
+    padding: 1em 0em;
+}
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+    padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+#navBar {
+    min-height:0 !important;
+}
+
+#jumbotron {
+    min-height: 37em;
+    background-image: url('https://wallpaperscraft.com/image/san_francisco_bridge_sea_ocean_sky_28635_3840x2400.jpg');
+    background-attachment: fixed;
+}
+
+#fullStretch {
+    width:100%;
+    font-size: large;
+}
+
+#bContent {
+    padding-top:4em;
+    padding-bottom:2em;
+}
+
+/*The product borrowed from other designs and modified*/
+.ProductBox {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 200px;
+}
+
+.ProductBox h3 {
+    position: relative;
+    top: -.5em;
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 0;
+    background: #fff;
+}
+/*These product box colors follow the semantic ui colors. So change them acoordingly. */
+.ProductBox--core h3 {
+    color: #03a93a;
+}
+.ProductBox--persistence h3 {
+    color: #2185d0;
+}
+.ProductBox--batch h3 {
+    color: #6435c9;
+}
+.ProductBox--codegen h3 {
+    color: #f26202;
+}
+.ProductBox--mobile h3 {
+    color: #018fc9;
+}
+.ProductBox--html5 h3 {
+    color: #e84f40;
+}
+.ProductBox h2 {
+    margin-bottom: 10px;
+    margin-top: -1px;
+}
+.ProductBox h2 sup {
+    font-size: 20px;
+}
+.ProductBox h4 {
+    margin-bottom: 1em;
+}
+
+#indexFooter {
+    min-height: 0 !important;
+}
+
+#contactButtons {
+    width:100%;
+}
+
+#centerText {
+    text-align: center;
+}
+
+#bContent .header {
+    text-align: center;
+}
+
+#headerParagraph {
+    margin-left: 4.5em;
+    margin-right:4.5em;
+    margin-bottom: 2.5em;
+    text-align: center;
+    font-size: large;
+}
+
+#colDivider {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#frameWorkContainer {
+    margin-top: 2em;
+    margin-bottom: -1.5em;
+}
+
+#moreDetails {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+#batchContainer {
+    margin-top: 2em;
+    margin-bottom: -1.5em;
+}
+
+#teamPics {
+    width:13em !important;
+}
+
+#picContainer {
+    height:20em;
+}
+
+#indvidualPic {
+    height: 12em;
+    width: 13em;
+}
+
+.centerTextBox {
+    text-align: center;
+}
+
+#fileUploader {
+    right:0;
+    top:0;
+    padding:0;
+    margin-left:6em;
+    cursor: pointer;
+    opacity: 0;
+    margin-top:.8em;
+    height:150%;
+}
+
+#homeFooter {
+    padding:0 !important;
+    margin-bottom:5em;
+    padding-top: 1em !important;
+}
+
+#remPadding {
+    padding: 4em 0;
+}
+
+#centerTextSegment {
+    padding: 0 !important;
+    padding-bottom: 3em !important;
+    text-align: center;
+}
+
+/*S - small, M - medium, L - large, N - No padding */
+#centerTextNPadding {
+    text-align: center;
+    padding: 0 !important;
+}
+#centerTextSPadding {
+    text-align: center;
+    padding: 2em 0 !important;
+}
+
+#centerTextMPadding {
+    text-align: center;
+    padding: 4em 0 !important;
+}
+
+#centerTextLPadding {
+    text-align: center;
+    padding: 8em 0 !important;
+}
+
+.leftAligned {
+    text-align: left;
+}
+
+.full {
+    width: 100%;
+}
+
+.unpadded {
+    padding: 0 !important;
+}
+
+#docButton {
+    margin-top:1em;
+}
+
+.nPadding {
+    padding: 0 !important;
+}
+
+.sPadding {
+    padding: 2em 0 !important;
+}
+
+.mPadding {
+    padding: 4em 0 !important;
+}
+
+.lPadding {
+    padding: 8em 0 !important;
+}
+
+.centerTable {
+    margin:0 5em;
+}
