@@ -5,24 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version = 2.2.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* To get stuff running, download the following programs:
+   * PGAdmin3 - postgresql isntaller website (sent on messenger)
+   * Rubymine (you can use your student id, it will be free and it's awesome)
+   * git bash (optional, but useful)
+   * heroku toolbelt (optional comes later for deployment...although you can just demo this on your localhost server)
+   
+* Database creation- THIS IS VERY IMPORTANT.
+  * once you have donwloaded and set up the above components...do the following.
+    * enter database.yml file and find "username" and "password" fields. updated them to the ones you are using. 
+    * then, run the following command:
+      * rake db:migrate. it should work. If it does not, open up PGAdmin and select your server (if there is a red x on it, that's ok. just click on it and the x will go away). This will re-initialize the server. 
+  * Second step:
+    * we need to now initialize the routes (where all the pages go to)
+    * run the following:
+      * rake routes 
+        * that's all you need. ti should populate your terminal with a bunch of routes you see. Example: root  get welcome/index  '/'
